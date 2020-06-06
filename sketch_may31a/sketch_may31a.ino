@@ -1,27 +1,3 @@
-/*------------------------------------------------------------------------------
-  07/01/2018
-  Author: Makerbro
-  Platforms: ESP8266
-  Language: C++/Arduino
-  File: webserver_websockets.ino
-  ------------------------------------------------------------------------------
-  Description: 
-  Code for YouTube video demonstrating how to transfer data between a web server
-  and a web client in real-time using websockets.
-  https://youtu.be/ROeT-gyYZfw
-  Do you like my videos? You can support the channel:
-  https://patreon.com/acrobotic
-  https://paypal.me/acrobotic
-  ------------------------------------------------------------------------------
-  Please consider buying products from ACROBOTIC to help fund future
-  Open-Source projects like this! We'll always put our best effort in every
-  project, and release all our design files and code for you to use. 
-  https://acrobotic.com/
-  https://amazon.com/acrobotic
-  ------------------------------------------------------------------------------
-  License:
-  Please see attached LICENSE.txt file for details.
-------------------------------------------------------------------------------*/
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <WebSocketsServer.h>
@@ -176,7 +152,7 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
     direita = (char) payload[3];
     
 
-    Serial.print("Em Cima: "+cima+" Baixo: "+baixo+" Esquerda: "+esquerda+" Direita: "+direita);
+    Serial.print("Cima: "+cima+" Baixo: "+baixo+" Esquerda: "+esquerda+" Direita: "+direita);
     Serial.println();
 
   }
